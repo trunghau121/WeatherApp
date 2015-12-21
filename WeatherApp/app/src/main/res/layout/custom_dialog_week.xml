@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="#fff"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên thành phố:"
+        android:textColor="@color/color_text_dialog"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <EditText
+        android:id="@+id/txtVitri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_material_blue_800"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số ngày tiếp theo:"
+        android:textColor="@color/color_text_dialog"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <EditText
+        android:id="@+id/txtCnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_material_blue_800"
+        android:inputType="number" />
+
+</LinearLayout>

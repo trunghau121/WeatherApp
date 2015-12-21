@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color tool bar-->
+    <color name="grey">#ddd</color>
+    <color name="black">#000</color>
+    <color name="primary">#1976D2</color>
+    <color name="primaryDark">#3F51B5</color>
+    <color name="accent">#448AFF</color>
+    <color name="colorPrimarytext">#212121</color>
+    <color name="colorsecondText">#999</color>
+    <color name="colorSecondText">#999</color>
+    <color name="color_tv_temp">#f0ad4e</color>
+    <color name="color_text_fragment_home">#867D7D</color>
+    <color name="color_weather">#464646</color>
+    <color name="color_text_dialog">#464646</color>
+    <color name="color_background_cardview">#1AFFFFFF</color>
+    <color name="color_text_temp">#FF5722</color>
+    <color name="select_background">#E0E0E0</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="coloLink">#1ea4f7</color>
+    <color name="colorDivider">#ccc</color>
+
+    <color name="colorAccent">#795548</color>
+
+    <color name="colorFAB">#FF9800</color>
+    <color name="colorFABPressed">#F57C00</color>
+
+    <!--color float button-->
+    <color name="color_FBA_press">#E040FB</color>
+    <color name="color_FBA">#D500F9</color>
+</resources>

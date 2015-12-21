@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/ln_mainItem"
+    android:background="@android:color/transparent">
+    <TextView
+        android:id="@+id/txtDataItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="09-09"
+        android:textStyle="bold"
+        android:textColor="@color/color_weather"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="#027C9B"/>
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        />
+    <TextView
+        android:id="@+id/txtTempItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="26°C"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"/>
+    <TextView
+        android:id="@+id/txtTimeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_weather"
+        android:text="01:00 SA"/>
+
+
+</LinearLayout>

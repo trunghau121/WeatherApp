@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ReviewWeather">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_reviewweather"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_reviewweather"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/color_background_cardview"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ln_main_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/map_maker" />
+
+                <TextView
+                    android:id="@+id/txtLocationreviewweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="vị trí hiện tại"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_weather"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtDayreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Thứ Hai"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/color_weather"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtDatereview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2015-09-05"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_weather" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtTempreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="26°C"
+                    android:textColor="@color/color_text_temp"
+                    android:textSize="55dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivReviewweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/d10d" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtDescriptionreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="mưa nhiều"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_weather"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ln_tempday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln_sunrise"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Nhiệt độ ngày :"/>
+
+                    <TextView
+                        android:id="@+id/txtTempdayreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24°C"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_tempnight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Nhiệt độ đêm :"/>
+
+                    <TextView
+                        android:id="@+id/txtTempnightreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24°C"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ln_pressure"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Áp suất :"/>
+
+                    <TextView
+                        android:id="@+id/txtPressurereview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000 hpa"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Độ ẩm :"/>
+
+                    <TextView
+                        android:id="@+id/txtHumidityreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="65%"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln_pressure"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Nhiệt độ gió :"/>
+
+                    <TextView
+                        android:id="@+id/txtWindspeedreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.6 m/s"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ln_humidity"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondText"
+                        android:text="Mây :"/>
+
+                    <TextView
+                        android:id="@+id/txtCloudreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="36%"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

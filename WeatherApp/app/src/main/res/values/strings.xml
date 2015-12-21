@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Ứng dụng thời tiết</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="current_weather">Thời tiết hiện tại</string>
+    <string name="postion_weather">Thời tiết địa điểm</string>
+    <string name="week_weather">Thời địa điểm và ngày kế tiếp</string>
+    <string name="temp">Nhiệt độ: </string>
+    <string name="min_temp">Nhiệt độ nhỏ nhất: </string>
+    <string name="wind">Tốc độ gió: </string>
+    <string name="cloudiness">Thời tiết: </string>
+    <string name="humidity">Độ ẩm: </string>
+    <string name="sunrise">Mặt trời mọc: </string>
+    <string name="pressure">Áp suất: </string>
+    <string name="sunset">Mặt trời lặng: </string>
+    <string name="googlemap_weather">Thời tiết trên bản đồ</string>
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_share">Share</string>
+    <string name="search_hint">Tìm kiếm</string>
+    <string name="facebook_app_id">849635035105776</string>
+    <string name="open">open</string>
+    <string name="closed">closed</string>
+    <string name="key_googlemap">AIzaSyD-NMxbNWmY2lexqHlIuIM3mYjs2dwx19k</string>
+
+</resources>

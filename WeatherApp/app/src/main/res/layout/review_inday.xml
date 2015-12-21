@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+                <LinearLayout
+                    android:id="@+id/ln_main_Inday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                  >
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtDateInday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="2015-09-05"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_weather" />
+
+                        <TextView
+                            android:id="@+id/txtTimeInday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="09:05"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_weather" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtDayInday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thứ Hai"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/color_weather"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtTempInday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="26°C"
+                                android:textColor="@color/color_text_temp"
+                                android:textSize="45dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/ivInday"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/d10d" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtDescriptionInday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="mưa nhiều"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_weather"
+                        android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:id="@+id/ln_pressure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorSecondText"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Áp suất :"/>
+
+                            <TextView
+                                android:id="@+id/txtPressureInday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000 hpa"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_weather"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ln_wind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorSecondText"
+                            android:text="Tốc độ gió :"/>
+                        <TextView
+                            android:id="@+id/txtWindspeedInday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.6 m/s"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_weather"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_humidity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorSecondText"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Độ ẩm :"/>
+
+                            <TextView
+                                android:id="@+id/txtHumidityInday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="65%"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_weather"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ln_cloud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorSecondText"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Mây :"/>
+
+                            <TextView
+                                android:id="@+id/txtCloudInday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="36%"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_weather"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+               </LinearLayout>
+</LinearLayout>
